@@ -1,4 +1,6 @@
 class Feed < ActiveRecord::Base
+  include FeedObserver
+
   has_many :entries, dependent: :destroy
 
   validates_presence_of :url
