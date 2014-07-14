@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-describe Feed do
+describe Entry do
 
   describe 'associations' do
-    it { should have_many(:entries).dependent(:destroy) }
+    it { should belong_to(:feed) }
   end
 
   describe 'presence' do

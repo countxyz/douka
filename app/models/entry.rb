@@ -1,5 +1,5 @@
-class Feed < ActiveRecord::Base
-  has_many :entries, dependent: :destroy
+class Entry < ActiveRecord::Base
+  belongs_to :feed
 
   validates_presence_of :url
 
