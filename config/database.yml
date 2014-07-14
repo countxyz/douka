@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: douka_development
+
+test:
+  <<: *default
+  database: douka_test
+
+production:
+  <<: *default
+  database: douka_production
+  username: douka
+  password: <%= ENV['DOUKA_DATABASE_PASSWORD'] %>
