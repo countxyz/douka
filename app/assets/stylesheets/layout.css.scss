@@ -1,0 +1,25 @@
+.feed-manager, .feed-manager:before,
+.entries,      .entries:before      { width: 20%; }
+
+.entry, .entry:before { width: 60%; }
+
+.feed-manager, .entries, .entry {
+  float: left;
+  padding: 20px 30px;
+}
+
+.entries, .entry { font-size: 90% }
+
+.feed-manager:before, .entries:before, .entry:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.feed-manager:before { left: 0; }
+
+.entries:before { left: 20%; }
+
+.entry:before { left: 40%; }
