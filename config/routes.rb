@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  resources :feeds
+  root 'home#index'
+
+  namespace :api do
+    namespace :v1 do
+      resources :feeds
+    end
+  end
+
+  get '*path', to: 'home#index'
 end

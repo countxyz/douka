@@ -1,0 +1,3 @@
+ul
+  each feed in controller
+    li= feed.url

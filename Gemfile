@@ -5,6 +5,7 @@ gem 'rails', '~> 4.1.4'
 gem 'pg', '~> 0.17.1'
 gem 'puma', '~> 2.8.2'
 
+gem 'active_model_serializers', '~> 0.8.1'
 gem 'coffee-rails', '~> 4.0.1'
 gem 'ember-rails', '~> 0.15.0'
 gem 'ember-source', '~> 1.6.0'
