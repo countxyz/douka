@@ -1,4 +1,5 @@
-each entry in entries
-  = entry.title
+ul
+  each entry in entries
+    li = entry.title
 
 = outlet
