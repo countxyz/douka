@@ -1,8 +1,10 @@
 .feed-manager
   ul
     each feed in controller
-      li= feed.url
+      link-to 'feed' feed tagName='li'
+        feed.url
 
 .entries
+  = outlet
 
 .entry

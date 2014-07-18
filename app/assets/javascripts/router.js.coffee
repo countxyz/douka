@@ -1,6 +1,8 @@
 App.Router.reopen
-  location: 'auto'
   rootURL: '/'
+  location: 'auto'
 
 App.Router.map ()->
-  @resource 'feeds', path: '/'
+  @resource 'feeds', path: '/', ->
+    @route 'new'
+    @resource 'feed', path: 'feeds/:feed_id'

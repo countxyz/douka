@@ -1,0 +1,4 @@
+each entry in entries
+  = entry.title
+
+= outlet
